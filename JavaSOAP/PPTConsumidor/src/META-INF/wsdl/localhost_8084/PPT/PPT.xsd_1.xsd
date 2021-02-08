@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://fje.edu.daw2/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://fje.edu.daw2/">
+
+<xs:element name="ConsultarPartides" type="tns:ConsultarPartides" />
+
+<xs:element name="ConsultarPartidesResponse" type="tns:ConsultarPartidesResponse" />
+
+<xs:element name="ConsultarPunts" type="tns:ConsultarPunts" />
+
+<xs:element name="ConsultarPuntsResponse" type="tns:ConsultarPuntsResponse" />
+
+<xs:element name="acabarJoc" type="tns:acabarJoc" />
+
+<xs:element name="acabarJocResponse" type="tns:acabarJocResponse" />
+
+<xs:element name="iniciarPartida" type="tns:iniciarPartida" />
+
+<xs:element name="iniciarPartidaResponse" type="tns:iniciarPartidaResponse" />
+
+<xs:element name="moureJugador" type="tns:moureJugador" />
+
+<xs:element name="moureJugadorResponse" type="tns:moureJugadorResponse" />
+
+<xs:complexType name="acabarJoc">
+<xs:sequence>
+<xs:element name="codiP" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="acabarJocResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="ConsultarPartides">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="ConsultarPartidesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ConsultarPunts">
+<xs:sequence>
+<xs:element name="codiP" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ConsultarPuntsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="iniciarPartida">
+<xs:sequence>
+<xs:element name="codiP" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="iniciarPartidaResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="moureJugador">
+<xs:sequence>
+<xs:element name="codiP" type="xs:int" />
+<xs:element name="jugador" type="xs:string" minOccurs="0" />
+<xs:element name="tipusMoviment" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="moureJugadorResponse">
+<xs:sequence />
+</xs:complexType>
+</xs:schema>
