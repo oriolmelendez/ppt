@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="js/jugador.js"></script>
+
+    </head>
+
+    <body>
+        <h1>Jugador <label id="jugador"></label></h1>
+        
+
+        <h3>Codi partida:</h3>
+        <label id="codiP"></label>
+
+        <h3>Moviments</h3>
+        <select id="moviment">
+            <option type="text" value="pedra">Pedra</option>
+            <option type="text" value="paper">Paper</option>
+            <option type="text" value="tissores">Tissores</option>
+        </select>
+        <button type="submit" value="ferMoviment" onclick="realitzarMoviment();">Realitza moviment</button><br>
+
+        <h3>Puntuació</h3>
+        <p>Jugador 1 : <label id="puntuacio1">0</label></p>
+        <p>Jugador 2 : <label id="puntuacio2">0</label></p>
+        
+        
+    </body>
+
+</html>
